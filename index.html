@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="addtask.html">Add Task</a></li>
-            <li><a href="about.html">About</a></li>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="addtask.html" class="nav-link">Add Task</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
     </nav>
-    <h3>Task List</h3>
-    <div>
-        <b>Buy groceries</b>  
-        <p>Status: <i>Pending</i></p>
-        <p>Due: <small>2025-02-10</small></p>
-        <p>Priority: High</p>
-        <button>Delete</button>
-        <button>Mark as Complete</button>
+
+    <h3 class="title">Task List</h3>
+
+    <div class="task">
+        <b class="task-title">Buy groceries</b>  
+        <p class="task-status">Status: <i>Pending</i></p>
+        <p class="task-due">Due: <small>2025-02-10</small></p>
+        <p class="task-priority">Priority: High</p>
+        <button class="btn btn-delete">Delete</button>
+        <button class="btn btn-complete">Mark as Complete</button>
     </div>
-    <br>
-    <div>
-        <b>Complete project</b>  
-        <p>Status: <i>Completed</i></p>
-        <p>Due: <small>2025-02-08</small></p>
-        <p>Priority: Medium</p>
-        <button>Delete</button>
+
+    <div class="task">
+        <b class="task-title">Complete project</b>  
+        <p class="task-status">Status: <i>Completed</i></p>
+        <p class="task-due">Due: <small>2025-02-08</small></p>
+        <p class="task-priority">Priority: Medium</p>
+        <button class="btn btn-delete">Delete</button>
     </div>
 </body>
 </html>

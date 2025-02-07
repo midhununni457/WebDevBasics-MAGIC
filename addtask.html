@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Add Task</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="addtask.html" class="nav-link">Add Task</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
     </nav>
-    <form>
-        <label for="taskName">Task Name:</label>
-        <input type="text" id="taskName" placeholder="Enter task name" required>
-        <br><br>
+    <h3 class="title">Add New Task</h3>
 
-        <label>Task Status:</label>
-        <input type="radio" id="pending" name="status" value="Pending" checked>
-        <label for="pending">Pending</label>
+    <form class="task-form">
+        <label for="taskName" class="form-label">Task Name:</label>
+        <input type="text" id="taskName" class="form-input" placeholder="Enter task name" required>
         
-        <input type="radio" id="completed" name="status" value="Completed">
-        <label for="completed">Completed</label>
-        <br><br>
+        <label class="form-label">Task Status:</label>
+        <div class="radio-group">
+            <input type="radio" id="pending" name="status" value="Pending" checked>
+            <label for="pending">Pending</label>
+        
+            <input type="radio" id="completed" name="status" value="Completed">
+            <label for="completed">Completed</label>
+        </div>
 
-        <label for="dueDate">Due Date:</label>
-        <input type="date" id="dueDate">
-        <br><br>
+        <label for="dueDate" class="form-label">Due Date:</label>
+        <input type="date" id="dueDate" class="form-input">
 
-        <label for="priority">Priority:</label>
-        <select id="priority">
+        <label for="priority" class="form-label">Priority:</label>
+        <select id="priority" class="form-input">
             <option value="Low">Low</option>
             <option value="Medium">Medium</option>
             <option value="High">High</option>
         </select>
-        <br><br>
 
-        <label for="notes">Notes:</label>
-        <textarea id="notes" placeholder="Additional details..."></textarea>
-        <br><br>
+        <label for="notes" class="form-label">Notes:</label>
+        <textarea id="notes" class="form-textarea" placeholder="Additional details..."></textarea>
 
-        <button type="submit">Add Task</button>
+        <button type="submit" class="btn btn-submit">Add Task</button>
     </form>
 </body>
 </html>
