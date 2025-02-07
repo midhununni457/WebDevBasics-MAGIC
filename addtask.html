@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <form>
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" placeholder="Enter task name" required>
+        <br><br>
+
+        <label>Task Status:</label>
+        <input type="radio" id="pending" name="status" value="Pending" checked>
+        <label for="pending">Pending</label>
+        
+        <input type="radio" id="completed" name="status" value="Completed">
+        <label for="completed">Completed</label>
+        <br><br>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate">
+        <br><br>
+
+        <label for="priority">Priority:</label>
+        <select id="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <br><br>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" placeholder="Additional details..."></textarea>
+        <br><br>
+
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+</html>
